@@ -10,7 +10,7 @@ function App() {
 
         <div>
           <h1>Saaim Chashoo</h1>
-          <p2>Software Engineering Student</p2>
+          <p4>Software Engineering Student at KMITL | Python, Rust, C++ | Aspiring Backend Developer</p4>
         </div>
       </div>
 
@@ -69,8 +69,12 @@ function App() {
     LinkedIn: <a href="https://www.linkedin.com/in/saaim-chashoo-5598ab374/" target="_blank">My LinkedIn</a>
   </p>
 </section>
+
+<footer style={{ marginTop: "50px", textAlign: "center" }}>
+  <p>© 2026 Saaim Chashoo</p>
+</footer>
+
     </div>
   );
 }
-
 export default App;
