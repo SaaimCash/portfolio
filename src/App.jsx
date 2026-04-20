@@ -35,7 +35,7 @@ function App() {
 
       <section>
         <h2>Skills</h2>
-        
+        <p>Python, Rust, C++, Power BI</p>
       </section>
 
       <section>
