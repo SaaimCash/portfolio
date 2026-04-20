@@ -1,15 +1,26 @@
 function App() {
   return (
     <div>
-      <h1>Saaim Chashoo</h1>
-      <p>Software Engineering Student</p>
+      <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+        <img
+          src="/profile.jpg"
+          alt="Profile"
+          style={{ width: "100px", borderRadius: "50%" }}
+        />
+
+        <div>
+          <h1>Saaim Chashoo</h1>
+          <p2>Software Engineering Student</p2>
+        </div>
+      </div>
 
       <section>
         <h2>About</h2>
         <p>
-          I am a first-year Software Engineering student at KMITL.
-          I am interested in backend development, systems programming,
-          and AI.
+          I am a Software Engineering student at KMITL with experience in Python,
+          Rust, and C++. I have built projects involving file systems, data
+          management, and data visualization. I am currently focusing on backend
+          development and full-stack web applications.
         </p>
       </section>
 
@@ -18,15 +29,25 @@ function App() {
 
   <div>
     <h3>Personal Library System</h3>
-    <p>Python project to store and manage ebooks.</p>
+    <p>
+      Built a Python-based system to store, manage, and retrieve ebooks,
+      implementing file handling and data organization features. This projects 
+      mimics a real library system, making it easy for users to keep trach of books they have. 
+    </p>
     <a href="https://github.com/SaaimCash/Personal-Library-System" target="_blank">
       View Project
     </a>
   </div>
 
+<div>
+         
+   ------------------------------------------------------------------------------------------
+</div>
   <div>
     <h3>Rust File Manager</h3>
-    <p>File system tool built using Rust.</p>
+    <p>A cross-platform desktop application built in Rust that scans directories, 
+      visualizes disk usage, detects duplicate files, and lets users manage 
+      (delete, move, or duplicate) their files — all through a clean Iced GUI interface.</p>
     <a href="https://github.com/ifelsebetter/disk-usage-visualizer" target="_blank">
       View Project
     </a>
