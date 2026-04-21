@@ -119,6 +119,28 @@ nav {
   margin-right: 80px;
 }
 
+.hero-socials { display: flex; gap: 12px; margin-top: 24px; }
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  border-color: rgba(26,26,46,0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
 .stat-card {
   background: #fff;
   border: 1px solid var(--card-border);
@@ -217,6 +239,22 @@ nav {
 
 .project-link::after { content: '→'; transition: transform 0.2s ease; }
 .project-card:hover .project-link::after { transform: translateX(4px); }
+
+.project-preview {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  border: 1px solid var(--card-border);
+}
+
+.project-preview img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  display: block;
+}
+
 
 .certs-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
 
