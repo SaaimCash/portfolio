@@ -76,18 +76,26 @@ function HomePage() {
 function ProjectsPage() {
   const projects = [
     {
-      tag: "Python · Custom TKInter",
+      tag: "Python · Custom TKInter · Solo",
       title: "Personal Library System",
       desc: "A Python-based system to store, manage, and retrieve ebooks with file handling and data organization. Mimics a real library for tracking your book collection.",
       img: "/library-preview.png",
       url: "https://github.com/SaaimCash/Personal-Library-System",
     },
     {
-      tag: "Rust · Iced GUI",
+      tag: "Rust · Iced GUI · Group",
       title: "Rust File Manager",
       desc: "Cross-platform desktop app that scans directories, visualizes disk usage, detects duplicate files, and lets users manage files through a clean Iced GUI interface.",
       img: "/filemanager-preview.png",
       url: "https://github.com/ifelsebetter/disk-usage-visualizer",
+    },
+
+    {
+      tag: "Python · CustomTkinter · Solo",
+      title: "Hangman Game",
+      desc: "A multi-screen Hangman game with a modern dark-mode GUI. Uses APIs to fetch random words and live definitions. Features a custom multiplayer mode where Player 1 sets the word for Player 2, with colour-coded letter buttons and a full game loop.",
+      img: "/hangman-preview.png",
+      url: "https://github.com/SaaimCash/hangman-game",
     },
   ];
 
