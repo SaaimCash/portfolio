@@ -11,8 +11,9 @@ function HomePage() {
           <div className="hero-tags">
             <span className="tag">Python</span>
             <span className="tag">Rust</span>
-            <span className="tag">C++</span>
+            <span className="tag">C++/C</span>
             <span className="tag">Power BI</span>
+            <span className="tag">Java</span>
           </div>
           <div className="hero-socials">
             <a href="mailto:saaimchashoo07@gmail.com" className="social-icon" title="Email">
@@ -79,22 +80,30 @@ function ProjectsPage() {
       tag: "Python · Custom TKInter · Solo",
       title: "Personal Library System",
       desc: "A Python-based system to store, manage, and retrieve ebooks with file handling and data organization. Mimics a real library for tracking your book collection.",
-      img: "/library-preview.png",
+      img: "/previews/library-preview.png",
       url: "https://github.com/SaaimCash/Personal-Library-System",
     },
     {
       tag: "Rust · Iced GUI · Group",
       title: "Rust File Manager",
       desc: "Cross-platform desktop app that scans directories, visualizes disk usage, detects duplicate files, and lets users manage files through a clean Iced GUI interface.",
-      img: "/filemanager-preview.png",
-      url: "https://github.com/ifelsebetter/disk-usage-visualizer",
+      img: "/previews/filemanager-preview.png",
+      url: "https://github.com/SaaimCash/disk-usage-visualizer",
+    },
+
+    {
+      tag: "Assembly · NASM / QEMU · Solo",
+      title: "x86 Bootloader",
+      desc: "A 512-byte boot sector written in raw 16-bit x86 assembly (NASM) that runs directly on bare metal or QEMU — with no operating system, no C runtime, and no external libraries.",
+      img: "/previews/bootloader-preview.png",
+      url: "https://github.com/SaaimCash/bootloader-Assembly",
     },
 
     {
       tag: "Python · CustomTkinter · Solo",
       title: "Hangman Game",
       desc: "A multi-screen Hangman game with a modern dark-mode GUI. Uses APIs to fetch random words and live definitions. Features a custom multiplayer mode where Player 1 sets the word for Player 2, with colour-coded letter buttons and a full game loop.",
-      img: "/hangman-preview.png",
+      img: "/previews/hangman-preview.png",
       url: "https://github.com/SaaimCash/hangman-game",
     },
   ];
@@ -127,9 +136,15 @@ function ProjectsPage() {
 }
 
 function CertsPage() {
-  // Add your real certifications here
   const certs = [
-    { icon: "🎓", title: "certification", issuer: "Issuer name", year: "2024" },
+    {
+      icon: "🎓",
+      title: "GCI World April 2026",
+      issuer: "Matsuo-Iwasawa Laboratory, Graduate School of Engineering, The University of Tokyo",
+      date: "31 August 2026",
+      preview: "/certs/GCI_World_APRIL_2026_preview.png",
+      file: "/certs/GCI_World_APRIL_2026_Certificate.pdf",
+    },
   ];
 
   return (
@@ -138,12 +153,28 @@ function CertsPage() {
         <div className="section-label">Certifications</div>
         <div className="certs-grid">
           {certs.map((c) => (
-            <div className="cert-card" key={c.title}>
-              <div className="cert-icon">{c.icon}</div>
+            <a
+              className="cert-card"
+              href={c.file}
+              target="_blank"
+              rel="noreferrer"
+              key={c.title}
+            >
+              <div className="cert-header">
+                <div className="cert-icon">{c.icon}</div>
+                <div className="cert-year">{c.date}</div>
+              </div>
               <div className="cert-title">{c.title}</div>
               <div className="cert-issuer">{c.issuer}</div>
-              <div className="cert-year">{c.year}</div>
-            </div>
+              {c.preview && (
+                <div className="cert-preview">
+                  <img src={c.preview} alt={`${c.title} preview`} />
+                </div>
+              )}
+              <div className="cert-footer">
+                <span className="cert-link">View Certificate PDF</span>
+              </div>
+            </a>
           ))}
         </div>
       </div>
